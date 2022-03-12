@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .form-floating {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .close-icon {
+        height: auto;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-floating {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .close-icon {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        cursor: pointer
+    }
+}

@@ -1,0 +1,65 @@
+<div class="main" *ngIf="(afAuth.user | async)">
+    
+    <div class="m-5 main-page">
+        <div class="first-card">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="mb-3">Buna, {{(afAuth.user | async)?.email}}!</h3>
+                    <h5 class="">
+                        Ai cheltuit in total {{totalSpent}} LEI <img class="icon" src="../../assets/icons/money-bill-alt-regular.svg" />
+                    </h5>
+                </div>
+              </div>
+              <div class="card mt-4">
+                <div class="card-body">
+                    <a href="http://www.fluentinfinante.ro/" target="_blank">
+                        <img class="learn-image" src="../../assets/images/10088.jpg" />
+                    </a>
+                    <h5 class="card-title">Invata mai multe despre finante</h5>
+                </div>
+            </div>
+        </div>
+          <div class="card">
+            <div class="card-body">
+
+                <div class="chart-total">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                    
+                </div>
+
+            </div>
+          </div>
+    </div>
+
+    <div class="courses mb-4">
+        <div class="card courses-card">
+            <div class="card-body">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <a href="https://financer.com/ro/finante-personale/" target="_blank" class="carousel-item active">
+                        <img src="../../assets/images/scott-graham-5fNmWej4tAA-unsplash.jpg" class="d-block w-100" alt="...">
+                      </a>
+                      <a href="https://www.xtb.com/ro/cum-investesti-in-bitcoin-si-alte-monede-virtuale-kb" target="_blank" class="carousel-item">
+                        <img src="../../assets/images/nick-chong-N__BnvQ_w18-unsplash.jpg" class="d-block w-100" alt="...">
+                      </a>
+                      <a href="https://www.imopedia.ro/stiri-imobiliare/cum-poti-sa-inveti-sa-faci-imobiliare-24725" target="_blank" class="carousel-item">
+                        <img src="../../assets/images/rupixen-com-Q59HmzK38eQ-unsplash.jpg" class="d-block w-100" alt="...">
+                      </a>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</div>

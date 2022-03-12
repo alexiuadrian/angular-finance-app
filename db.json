@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "name": "Paine",
+      "category": "Distractie",
+      "description": "1 franzela de paine",
+      "price": "2",
+      "date": "2022-01-09",
+      "id": 1
+    },
+    {
+      "name": "Cascaval",
+      "category": "Alimente",
+      "description": "5 felii de cascaval",
+      "price": "12",
+      "date": "2022-01-05",
+      "userId": "",
+      "id": 2
+    },
+    {
+      "name": "Buna",
+      "category": "Alimente",
+      "description": "bgbhg",
+      "price": "120",
+      "date": "2022-01-25",
+      "userId": "Ua8DNYFA3WadtFuKNWT8xdb3Sv9",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Buna12",
+      "description": "Heleljolvhlkhsl kjhlgsfdl hgldsfgj d",
+      "price": "12",
+      "category": "Alimente",
+      "date": "2022-01-10",
+      "userId": "Ua8DNYFA3WadtFuKNWT8xdb3Sv93"
+    },
+    {
+      "name": "Bronx Zoo",
+      "category": "Alimente",
+      "description": "1 franzela de paine",
+      "price": "20",
+      "date": "2022-01-10",
+      "userId": "Ua8DNYFA3WadtFuKNWT8xdb3Sv93",
+      "id": 5
+    },
+    {
+      "name": "Directia IT",
+      "category": "Alimente",
+      "description": "bgbhg",
+      "price": "40",
+      "date": "2022-01-11",
+      "userId": "Ua8DNYFA3WadtFuKNWT8xdb3Sv93",
+      "id": 6
+    },
+    {
+      "name": "Paine",
+      "category": "Alimente",
+      "description": "1 franzela de paine",
+      "price": "2",
+      "date": "2022-01-13",
+      "userId": "GPOaSj8FCyWDIqTIf4tgzvLVcG53",
+      "id": 7
+    }
+  ]
+}

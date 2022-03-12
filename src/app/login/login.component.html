@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()" class="login-form mt-3">
+    <div class="form-floating mb-3">
+        <input type="email" formControlName="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Adresa de email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Parola</label>
+    </div>
+    <div class="form-check mb-3">
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input">
+        <span class="form-check-sign"></span>
+        Remember me
+        </label>
+    </div>
+    <div class="mb-3">
+        Nu ai cont? <a href="/signup" class="link-primary">Inregistreaza-te!</a>
+    </div>
+    <button type="submit" class="btn btn-primary btn-round btn-block">Login</button>
+</form>

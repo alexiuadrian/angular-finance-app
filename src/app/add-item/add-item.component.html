@@ -1,0 +1,34 @@
+<form *ngIf="showAddItem" (ngSubmit)="onSubmit()">
+    <!-- <img src="../assets/icons/times-solid.svg" alt="times-solid" class="close-icon" (click)="onClose()"/> -->
+    <button type="button" class="btn-close align-items-end" aria-label="Close" (click)="onClose()"></button>
+    <div class="form-floating">
+        <input type="text" name="name" [(ngModel)]="name" class="form-control mb-3" id="floatingInputValue" placeholder="Introduceti un nume" validate required>
+        <label for="floatingInputValue">Numele cheltuielii</label>
+    </div>
+
+    <div class="form-floating">
+        <select name="category" [(ngModel)]="category" class="form-select" aria-label="Default select example">
+            <option selected>Selecteaza o categorie</option>
+            <option *ngFor="let category1 of categoriesArray" [value]="category1">{{category1}}</option>
+          </select>
+    </div>
+
+    <div class="form-floating">
+        <input type="textarea" name="description" [(ngModel)]="description" class="form-control mb-3" id="floatingInputValue" placeholder="Introduceti o descriere" validate required>
+        <label for="floatingInputValue">Descriere</label>
+    </div>
+
+    <div class="form-floating">
+        <input type="text" name="price" [(ngModel)]="price" class="form-control mb-3" id="floatingInputValue" placeholder="Introduceti un pret" validate required>
+        <label for="floatingInputValue">Pret</label>
+    </div>
+
+    <div class="form-floating">
+        <input type="date" name="date" [(ngModel)]="date" class="form-control mb-3" id="floatingInputValue" placeholder="Introduceti o data" validate required>
+        <label for="floatingInputValue">Data</label>
+    </div>
+
+    <div class="form-floating">
+        <input type="submit" class="btn btn-primary" value="Adauga">
+    </div>
+</form>

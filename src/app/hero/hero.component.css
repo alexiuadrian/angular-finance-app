@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .btn {
+        width: auto;
+        /* margin: 0 auto; */
+    }
+
+    .titleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer
+    }
+
+    .plusIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .btn {
+        width: auto;
+        height: auto;
+    }
+
+    .titleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .plusIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

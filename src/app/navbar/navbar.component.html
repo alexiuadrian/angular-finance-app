@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Financify</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categorii
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/alimente">Alimente</a></li>
+              <li><a class="dropdown-item" href="/electronice">Electronice</a></li>
+              <li><a class="dropdown-item" href="/casa">Casa</a></li>
+              <li><a class="dropdown-item" href="/distractie">Distractie</a></li>
+              <li><a class="dropdown-item" href="/sport">Sport</a></li>
+              <li><a class="dropdown-item" href="/animale">Animale</a></li>
+              <li><a class="dropdown-item" href="/altele">Altele</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-evenly user-buttons">
+          <div *ngIf="(afAuth.user | async)">
+            <button class="btn btn-light" (click)="logout()" type="submit">Logout</button>
+          </div>
+          <div *ngIf="!(afAuth.user | async)">
+            <a href="/login" class="btn btn-light" type="submit">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
